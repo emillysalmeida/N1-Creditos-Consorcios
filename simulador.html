@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador Raio-X — N1 Crédito e Consórcios</title>
+  <meta name="description" content="Simule gratuitamente sua solução em crédito ou consórcio. Compare opções entre mais de 30 instituições e descubra a melhor alternativa para o seu objetivo.">
+  <link rel="icon" type="image/svg+xml" href="assets/logos/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+  <aside class="antifraude-banner" aria-label="Alerta institucional de segurança">
+    <div class="container">
+      <div class="antifraude-inner">
+        <div class="antifraude-content">
+          <span class="antifraude-badge">
+            <svg class="antifraude-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Segurança Oficial
+          </span>
+          <span class="antifraude-text">
+            <strong class="antifraude-highlight">Aviso de Segurança:</strong> A N1 Crédito e Consórcios <strong class="antifraude-strong">nunca cobra taxas ou depósitos antecipados</strong> para análise ou liberação.
+          </span>
+        </div>
+        <a href="#" class="antifraude-link" data-open-modal="safety-modal" aria-label="Ver canais oficiais e diretrizes de segurança">
+          Canais Oficiais →
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="index.html" class="header-brand" aria-label="N1 Crédito e Consórcios — Página Inicial">
+        <img src="assets/logos/n1-logo-horizontal-new.png" alt="Logo N1 Crédito e Consórcios" class="header-logo" width="180" height="48">
+      </a>
+      <nav class="header-nav" aria-label="Navegação Principal">
+        <ul class="nav-list" role="menubar">
+          <li role="none"><a href="solucoes.html" class="nav-link" role="menuitem">Soluções</a></li>
+          <li role="none"><a href="simulador.html" class="nav-link is-active" role="menuitem">Simulador</a></li>
+          <li role="none"><a href="como-funciona.html" class="nav-link" role="menuitem">Como Funciona</a></li>
+          <li role="none"><a href="parceiros.html" class="nav-link" role="menuitem">Parceiros</a></li>
+          <li role="none"><a href="sobre.html" class="nav-link" role="menuitem">Sobre</a></li>
+          <li role="none"><a href="contato.html" class="nav-link" role="menuitem">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="simulador.html" class="btn btn-primary btn-sm">
+          <span>Simule agora</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://wa.me/5511945339633" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">WhatsApp Oficial</a>
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-drawer-backdrop" id="drawer-backdrop" aria-hidden="true"></div>
+  <div class="mobile-nav-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Menu Mobile">
+    <div>
+      <div class="mobile-drawer-header">
+        <img src="assets/logos/n1-logo-horizontal-new.png" alt="N1 Crédito e Consórcios" class="header-logo" width="140" height="38">
+        <button type="button" class="mobile-drawer-close" id="drawer-close" aria-label="Fechar menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <nav class="mobile-nav-list">
+        <a href="solucoes.html" class="mobile-nav-link">Soluções por Objetivo</a>
+        <a href="simulador.html" class="mobile-nav-link">Simulador Raio-X</a>
+        <a href="como-funciona.html" class="mobile-nav-link">Como Funciona</a>
+        <a href="parceiros.html" class="mobile-nav-link">Instituições Parceiras</a>
+        <a href="sobre.html" class="mobile-nav-link">Sobre a N1</a>
+        <a href="contato.html" class="mobile-nav-link">Contato</a>
+      </nav>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:12px;">
+      <a href="simulador.html" class="btn btn-primary btn-sm" style="text-align:center;">Simular Minha Solução</a>
+      <a href="https://wa.me/5511945339633" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm" style="text-align:center;">Falar pelo WhatsApp</a>
+    </div>
+  </div>
+
+  <main id="conteudo-principal">
+
+    <section class="page-hero-section" aria-labelledby="page-hero-title">
+      <div class="container">
+        <div class="page-hero-content">
+          <span class="section-tag">Simulador Raio-X</span>
+          <h1 class="page-hero-title" id="page-hero-title">Entenda seu objetivo antes de decidir</h1>
+          <p class="page-hero-desc">Preencha as informações abaixo e um consultor especialista entrará em contato para apresentar as melhores opções entre mais de 30 instituições.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Simulator Form -->
+    <section class="section" aria-labelledby="sim-form-title">
+      <div class="container">
+        <div class="lead-form-box">
+          <h2 class="section-title" id="sim-form-title" style="margin-bottom:var(--space-8); font-size:var(--font-size-xl);">Inicie sua simulação</h2>
+          <p style="margin-bottom:var(--space-32); color:var(--text-secondary);">Preencha os dados abaixo. Um consultor analisará sua situação e apresentará as melhores alternativas de forma personalizada.</p>
+
+          <form id="simulator-form" novalidate>
+            <div class="form-grid-2" style="margin-bottom:var(--space-16);">
+              <div class="form-group">
+                <label class="form-label" for="sim-name">Nome completo *</label>
+                <input type="text" id="sim-name" name="name" class="form-input" placeholder="Seu nome" required autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="sim-phone">WhatsApp *</label>
+                <input type="tel" id="sim-phone" name="phone" class="form-input" placeholder="(11) 99999-9999" required autocomplete="tel">
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-bottom:var(--space-16);">
+              <label class="form-label" for="sim-objective">Qual é o seu objetivo? *</label>
+              <select id="sim-objective" name="objective" class="form-input" required>
+                <option value="">Selecione a categoria</option>
+                <option value="imovel-residencial">Imóvel Residencial</option>
+                <option value="imovel-comercial">Imóvel Comercial / Sala</option>
+                <option value="veiculo-leve">Veículo Leve (carro / moto)</option>
+                <option value="veiculo-pesado">Caminhão / Veículo Pesado</option>
+                <option value="maquina-agricola">Máquina Agrícola</option>
+                <option value="capital-giro">Capital de Giro (PJ)</option>
+                <option value="energia-solar">Energia Solar</option>
+                <option value="outro">Outro objetivo</option>
+              </select>
+            </div>
+
+            <div class="form-grid-2" style="margin-bottom:var(--space-16);">
+              <div class="form-group">
+                <label class="form-label" for="sim-value">Valor estimado do projeto</label>
+                <input type="text" id="sim-value" name="value" class="form-input" placeholder="Ex: R$ 300.000">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="sim-profile">Perfil</label>
+                <select id="sim-profile" name="profile" class="form-input">
+                  <option value="">Selecione</option>
+                  <option value="pf">Pessoa Física</option>
+                  <option value="pj">Pessoa Jurídica</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-bottom:var(--space-32);">
+              <label class="form-label" for="sim-message">Conte mais sobre seu objetivo (opcional)</label>
+              <textarea id="sim-message" name="message" class="form-input" rows="3" placeholder="Descreva brevemente o que você quer realizar..."></textarea>
+            </div>
+
+            <div style="display:flex; gap:var(--space-16); flex-wrap:wrap; align-items:center;">
+              <button type="submit" class="btn btn-primary btn-lg" id="sim-submit-btn">
+                <span>Enviar para consultor via WhatsApp</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+              <p style="font-size:12px; color:var(--text-muted); margin:0; flex:1; min-width:200px;">
+                Seus dados são protegidos pela LGPD e não serão compartilhados com terceiros.
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <!-- Info Cards -->
+        <div class="trust-bar-grid" style="margin-top:var(--space-64);">
+          <div class="trust-item">
+            <div class="trust-icon-box"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+            <div class="trust-text"><h3>100% gratuito</h3><p>A análise e simulação são completamente gratuitas, sem compromisso.</p></div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon-box"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
+            <div class="trust-text"><h3>Zero cobrança prévia</h3><p>Nenhuma taxa é cobrada antes da formalização do seu produto.</p></div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon-box"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div>
+            <div class="trust-text"><h3>Consultor especialista</h3><p>Atendimento humano e personalizado para cada situação.</p></div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon-box"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg></div>
+            <div class="trust-text"><h3>+30 instituições</h3><p>Comparamos propostas de mais de 30 bancos e administradoras.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="footer-logo-wrap" aria-label="N1 Crédito e Consórcios — Início">
+            <img src="assets/logos/n1-logo-footer.png" alt="Logo N1 Crédito e Consórcios" class="footer-logo" width="180" height="42" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="footer-logo-fallback" style="display:none; font-size:20px; font-weight:800; color:#ffffff;">N1 <span style="color:#106DCE;">Crédito</span> &amp; Consórcios</span>
+          </a>
+          <p class="footer-slogan">Crédito com clareza. Decisão com confiança.</p>
+          <div class="footer-corporate"><strong>Libero Promotora e Representações Comerciais LTDA</strong><br>Plataforma oficial correspondente de mais de 30 instituições financeiras.</div>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/n1creditoeconsorcios/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+            <a href="https://www.facebook.com/consorcion1" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+            <a href="https://www.linkedin.com/company/consorcion1/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Institucional</h4>
+          <nav class="footer-nav-list">
+            <a href="sobre.html" class="footer-nav-link">Sobre a N1</a>
+            <a href="como-funciona.html" class="footer-nav-link">Como Funciona</a>
+            <a href="parceiros.html" class="footer-nav-link">Instituições Parceiras</a>
+            <a href="contato.html" class="footer-nav-link">Unidades &amp; Endereços</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Soluções</h4>
+          <nav class="footer-nav-list">
+            <a href="solucoes.html#imoveis" class="footer-nav-link">Imóveis &amp; Construções</a>
+            <a href="solucoes.html#veiculos" class="footer-nav-link">Veículos &amp; Motos</a>
+            <a href="solucoes.html#pesados" class="footer-nav-link">Caminhões e Pesados</a>
+            <a href="solucoes.html#maquinas" class="footer-nav-link">Máquinas Agrícolas</a>
+            <a href="solucoes.html#capital" class="footer-nav-link">Capital de Giro</a>
+            <a href="solucoes.html#solar" class="footer-nav-link">Energia Fotovoltaica</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Ajuda &amp; Segurança</h4>
+          <nav class="footer-nav-list">
+            <a href="simulador.html" class="footer-nav-link">Simulador Raio-X</a>
+            <a href="contato.html#faq" class="footer-nav-link">Perguntas Frequentes</a>
+            <a href="contato.html" class="footer-nav-link">Falar com Consultor</a>
+            <a href="#" class="footer-nav-link" data-open-modal="safety-modal">Alerta Antifraude</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; <span id="current-year">2026</span> N1 Crédito e Consórcios &bull; Libero Promotora e Representações Comerciais LTDA. Todos os direitos reservados.</div>
+        <div class="footer-bottom-links">
+          <a href="#" data-open-modal="privacy-modal">Privacidade</a>
+          <a href="#" data-open-modal="safety-modal">Canais Oficiais</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <aside class="floating-whatsapp" aria-label="Atendimento via WhatsApp">
+    <span class="floating-whatsapp-tooltip">Falar com especialista N1</span>
+    <a href="https://wa.me/5511945339633" target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" aria-label="WhatsApp Oficial">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+    </a>
+  </aside>
+
+  <div class="modal-overlay" id="safety-modal" role="dialog" aria-modal="true" aria-labelledby="safety-modal-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="safety-modal-title">Diretrizes de Segurança &amp; Canais Oficiais</h3>
+        <button type="button" class="modal-close" data-close-modal>✕</button>
+      </div>
+      <div class="modal-body">
+        <h4>Regra Fundamental</h4>
+        <p>A N1 NÃO cobra nenhum valor antecipado antes da formalização do produto financeiro.</p>
+        <h4>Canais Oficiais</h4>
+        <ul style="list-style:disc; margin-left:20px;">
+          <li>WhatsApp: +55 11 94533-9633</li>
+          <li>Telefone: (11) 3111-7700</li>
+          <li>E-mail: contato@n1creditoeconsorcios.com.br</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="privacy-modal" role="dialog" aria-modal="true" aria-labelledby="privacy-modal-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="privacy-modal-title">Política de Privacidade</h3>
+        <button type="button" class="modal-close" data-close-modal>✕</button>
+      </div>
+      <div class="modal-body">
+        <p>A Libero Promotora e Representações Comerciais LTDA respeita a privacidade conforme a LGPD (Lei nº 13.709/2018). Seus dados são utilizados exclusivamente para atendimento consultivo e não são vendidos a terceiros.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/analytics.js"></script>
+  <script src="js/simulator.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

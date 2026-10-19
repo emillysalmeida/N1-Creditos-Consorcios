@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Como Funciona — N1 Crédito e Consórcios</title>
+  <meta name="description" content="Entenda o processo consultivo da N1: da análise do seu objetivo à concretização do seu bem, com transparência em cada etapa.">
+  <link rel="icon" type="image/svg+xml" href="assets/logos/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+  <aside class="antifraude-banner" aria-label="Alerta institucional de segurança">
+    <div class="container">
+      <div class="antifraude-inner">
+        <div class="antifraude-content">
+          <span class="antifraude-badge">
+            <svg class="antifraude-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Segurança Oficial
+          </span>
+          <span class="antifraude-text">
+            <strong class="antifraude-highlight">Aviso de Segurança:</strong> A N1 Crédito e Consórcios <strong class="antifraude-strong">nunca cobra taxas ou depósitos antecipados</strong> para análise ou liberação.
+          </span>
+        </div>
+        <a href="#" class="antifraude-link" data-open-modal="safety-modal" aria-label="Ver canais oficiais e diretrizes de segurança">
+          Canais Oficiais →
+        </a>
+      </div>
+    </div>
+  </aside>
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="index.html" class="header-brand" aria-label="N1 Crédito e Consórcios — Início">
+        <img src="assets/logos/n1-logo-horizontal-new.png" alt="Logo N1 Crédito e Consórcios" class="header-logo" width="180" height="48">
+      </a>
+      <nav class="header-nav" aria-label="Navegação Principal">
+        <ul class="nav-list" role="menubar">
+          <li role="none"><a href="solucoes.html" class="nav-link" role="menuitem">Soluções</a></li>
+          <li role="none"><a href="simulador.html" class="nav-link" role="menuitem">Simulador</a></li>
+          <li role="none"><a href="como-funciona.html" class="nav-link is-active" role="menuitem">Como Funciona</a></li>
+          <li role="none"><a href="parceiros.html" class="nav-link" role="menuitem">Parceiros</a></li>
+          <li role="none"><a href="sobre.html" class="nav-link" role="menuitem">Sobre</a></li>
+          <li role="none"><a href="contato.html" class="nav-link" role="menuitem">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="simulador.html" class="btn btn-primary btn-sm"><span>Simule agora</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        <a href="https://wa.me/5511945339633" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">WhatsApp Oficial</a>
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-drawer-backdrop" id="drawer-backdrop" aria-hidden="true"></div>
+  <div class="mobile-nav-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Menu Mobile">
+    <div>
+      <div class="mobile-drawer-header">
+        <img src="assets/logos/n1-logo-horizontal-new.png" alt="N1" class="header-logo" width="140" height="38">
+        <button type="button" class="mobile-drawer-close" id="drawer-close" aria-label="Fechar menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+      </div>
+      <nav class="mobile-nav-list">
+        <a href="solucoes.html" class="mobile-nav-link">Soluções por Objetivo</a>
+        <a href="simulador.html" class="mobile-nav-link">Simulador Raio-X</a>
+        <a href="como-funciona.html" class="mobile-nav-link">Como Funciona</a>
+        <a href="parceiros.html" class="mobile-nav-link">Instituições Parceiras</a>
+        <a href="sobre.html" class="mobile-nav-link">Sobre a N1</a>
+        <a href="contato.html" class="mobile-nav-link">Contato</a>
+      </nav>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <a href="simulador.html" class="btn btn-primary btn-sm" style="text-align:center;">Simular Minha Solução</a>
+      <a href="https://wa.me/5511945339633" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm" style="text-align:center;">Falar pelo WhatsApp</a>
+    </div>
+  </div>
+
+  <main id="conteudo-principal">
+
+    <section class="page-hero-section" aria-labelledby="page-hero-title">
+      <div class="container">
+        <div class="page-hero-content">
+          <span class="section-tag">Jornada Consultiva</span>
+          <h1 class="page-hero-title" id="page-hero-title">Como funciona o atendimento na N1</h1>
+          <p class="page-hero-desc">Um processo claro, estruturado e transparente do começo ao fim. Entenda cada etapa da nossa metodologia consultiva.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="steps-title">
+      <div class="container">
+        <h2 class="sr-only" id="steps-title">Etapas do processo N1</h2>
+        <div class="how-it-works-timeline">
+          <div class="timeline-step">
+            <span class="step-number">01</span>
+            <h3 class="step-title">Conte seu objetivo</h3>
+            <p class="step-desc">Você compartilha conosco o que deseja realizar: prazos, valores e capacidades financeiras. Sem julgamentos, sem pressa.</p>
+          </div>
+          <div class="timeline-step">
+            <span class="step-number">02</span>
+            <h3 class="step-title">Análise multibancos</h3>
+            <p class="step-desc">Nossa tecnologia e equipe analisam alternativas entre mais de 30 instituições financeiras para encontrar a oportunidade campeã.</p>
+          </div>
+          <div class="timeline-step">
+            <span class="step-number">03</span>
+            <h3 class="step-title">Orientação especializada</h3>
+            <p class="step-desc">Um consultor especialista explica em detalhes custos, prazos e vantagens de cada proposta, com total transparência.</p>
+          </div>
+          <div class="timeline-step">
+            <span class="step-number">04</span>
+            <h3 class="step-title">Decida com confiança</h3>
+            <p class="step-desc">Com todas as informações transparentes, você escolhe o caminho que melhor se ajusta ao seu plano e objetivos.</p>
+          </div>
+          <div class="timeline-step">
+            <span class="step-number">05</span>
+            <h3 class="step-title">Acompanhamento total</h3>
+            <p class="step-desc">Nosso backoffice presta suporte contínuo até a concretização completa do seu bem ou liberação do crédito.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:var(--space-64);">
+          <div class="section-header">
+            <span class="section-tag">Nossos Diferenciais</span>
+            <h2 class="section-title" id="diferenciais-title">O que torna a N1 diferente</h2>
+            <p class="section-subtitle">Nossa metodologia consultiva é construída sobre pilares que garantem segurança e clareza para cada cliente.</p>
+          </div>
+          <div class="differentials-grid">
+            <div class="differential-card">
+              <div class="differential-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div>
+              <h3 class="differential-title">Atendimento sem pressão</h3>
+              <p class="differential-desc">Não vendemos produtos prontos. Estudamos sua situação real e apresentamos opções que fazem sentido para o seu momento.</p>
+            </div>
+            <div class="differential-card">
+              <div class="differential-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg></div>
+              <h3 class="differential-title">Análise multibancos</h3>
+              <p class="differential-desc">Acesso simultâneo a mais de 30 instituições financeiras para garantir a melhor proposta do mercado para cada perfil.</p>
+            </div>
+            <div class="differential-card">
+              <div class="differential-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
+              <h3 class="differential-title">Zero cobrança antecipada</h3>
+              <p class="differential-desc">Nenhuma taxa, depósito ou valor é cobrado antes da formalização e aprovação do seu produto financeiro.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:var(--space-64);">
+          <a href="simulador.html" class="btn btn-primary btn-lg">Iniciar minha simulação agora →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-final-section" aria-labelledby="cta-cf-title">
+      <div class="container">
+        <div class="cta-final-content">
+          <h2 class="cta-final-title" id="cta-cf-title">Pronto para dar o próximo passo?</h2>
+          <p class="cta-final-subtitle">Fale com um consultor especialista e descubra a solução ideal para o seu objetivo.</p>
+          <div class="cta-final-actions">
+            <a href="simulador.html" class="btn btn-primary btn-lg">Simular minha solução</a>
+            <a href="https://wa.me/5511945339633" target="_blank" rel="noopener noreferrer" class="btn btn-outline-white btn-lg">Falar pelo WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="footer-logo-wrap" aria-label="N1 Crédito e Consórcios">
+            <img src="assets/logos/n1-logo-footer.png" alt="Logo N1 Crédito e Consórcios" class="footer-logo" width="180" height="42" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="footer-logo-fallback" style="display:none; font-size:20px; font-weight:800; color:#ffffff;">N1 <span style="color:#106DCE;">Crédito</span> &amp; Consórcios</span>
+          </a>
+          <p class="footer-slogan">Crédito com clareza. Decisão com confiança.</p>
+          <div class="footer-corporate"><strong>Libero Promotora e Representações Comerciais LTDA</strong><br>Plataforma oficial correspondente de mais de 30 instituições financeiras.</div>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/n1creditoeconsorcios/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path></svg></a>
+            <a href="https://www.facebook.com/consorcion1" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+            <a href="https://www.linkedin.com/company/consorcion1/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+          </div>
+        </div>
+        <div><h4 class="footer-col-title">Institucional</h4><nav class="footer-nav-list"><a href="sobre.html" class="footer-nav-link">Sobre a N1</a><a href="como-funciona.html" class="footer-nav-link">Como Funciona</a><a href="parceiros.html" class="footer-nav-link">Instituições Parceiras</a><a href="contato.html" class="footer-nav-link">Contato</a></nav></div>
+        <div><h4 class="footer-col-title">Soluções</h4><nav class="footer-nav-list"><a href="solucoes.html#imoveis" class="footer-nav-link">Imóveis</a><a href="solucoes.html#veiculos" class="footer-nav-link">Veículos</a><a href="solucoes.html#pesados" class="footer-nav-link">Caminhões</a><a href="solucoes.html#capital" class="footer-nav-link">Capital de Giro</a><a href="solucoes.html#solar" class="footer-nav-link">Energia Solar</a></nav></div>
+        <div><h4 class="footer-col-title">Ajuda &amp; Segurança</h4><nav class="footer-nav-list"><a href="simulador.html" class="footer-nav-link">Simulador Raio-X</a><a href="contato.html#faq" class="footer-nav-link">Perguntas Frequentes</a><a href="#" class="footer-nav-link" data-open-modal="safety-modal">Alerta Antifraude</a><a href="#" class="footer-nav-link" data-open-modal="privacy-modal">Privacidade</a></nav></div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; <span id="current-year">2026</span> N1 Crédito e Consórcios &bull; Libero Promotora e Representações Comerciais LTDA. Todos os direitos reservados.</div>
+        <div class="footer-bottom-links"><a href="#" data-open-modal="privacy-modal">Privacidade</a><a href="#" data-open-modal="safety-modal">Canais Oficiais</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <aside class="floating-whatsapp" aria-label="WhatsApp">
+    <span class="floating-whatsapp-tooltip">Falar com especialista N1</span>
+    <a href="https://wa.me/5511945339633" target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" aria-label="WhatsApp Oficial">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+    </a>
+  </aside>
+
+  <div class="modal-overlay" id="safety-modal" role="dialog" aria-modal="true" aria-labelledby="safety-modal-title">
+    <div class="modal-card"><div class="modal-header"><h3 class="modal-title" id="safety-modal-title">Segurança &amp; Canais Oficiais</h3><button type="button" class="modal-close" data-close-modal>✕</button></div><div class="modal-body"><h4>Regra Fundamental</h4><p>A N1 NÃO cobra nenhum valor antecipado.</p><h4>Canais Oficiais</h4><ul style="list-style:disc;margin-left:20px;"><li>WhatsApp: +55 11 94533-9633</li><li>Tel: (11) 3111-7700</li></ul></div></div>
+  </div>
+  <div class="modal-overlay" id="privacy-modal" role="dialog" aria-modal="true" aria-labelledby="privacy-modal-title">
+    <div class="modal-card"><div class="modal-header"><h3 class="modal-title" id="privacy-modal-title">Política de Privacidade</h3><button type="button" class="modal-close" data-close-modal>✕</button></div><div class="modal-body"><p>A N1 respeita a privacidade conforme a LGPD. Seus dados são usados exclusivamente para atendimento.</p></div></div>
+  </div>
+
+  <script src="js/analytics.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

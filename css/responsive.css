@@ -1,0 +1,293 @@
+/* ==========================================================================
+   N1 CRÉDITO E CONSÓRCIOS — RESPONSIVE STYLES v2
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Desktop & Laptop (1100px and below)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1100px) {
+  .hero-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-32);
+  }
+
+  .solutions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .solutions-visual-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .how-it-works-timeline {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .proof-stats-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-32);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Tablet (900px and below)
+   -------------------------------------------------------------------------- */
+@media (max-width: 900px) {
+  :root {
+    --header-height: 70px;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .header-actions .btn:not(.menu-toggle) {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-48);
+  }
+
+  .hero-visual {
+    max-width: 520px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .trust-bar-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-20);
+  }
+
+  .solutions-visual-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .simulator-box {
+    grid-template-columns: 1fr;
+  }
+
+  .simulator-controls {
+    padding: var(--space-28);
+  }
+
+  .simulator-result-panel {
+    padding: var(--space-28);
+  }
+
+  .differentials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .partners-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .edu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .proof-stats-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-16);
+  }
+
+  .proof-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-32);
+  }
+
+  .units-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .lead-form-box {
+    padding: var(--space-32);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Mobile (768px and below)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .section {
+    padding-top: var(--space-48);
+    padding-bottom: var(--space-48);
+  }
+
+  .antifraude-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-12);
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .hero-floating-badge {
+    display: none;
+  }
+
+  .solutions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .solutions-visual-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .how-it-works-timeline {
+    grid-template-columns: 1fr;
+  }
+
+  .differentials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .edu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .proof-stats-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .proof-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-final-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cta-final-actions .btn {
+    width: 100%;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-32);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-12);
+  }
+
+  .floating-whatsapp {
+    bottom: 18px;
+    right: 18px;
+  }
+
+  .floating-whatsapp-btn {
+    width: 52px;
+    height: 52px;
+  }
+
+  .chatbot-widget {
+    bottom: 80px;
+    left: 18px;
+    right: auto;
+  }
+
+  .chatbot-window {
+    width: calc(100vw - 36px);
+    height: 420px;
+  }
+
+  .cookie-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cookie-actions {
+    width: 100%;
+  }
+
+  .cookie-actions .btn {
+    flex: 1;
+  }
+
+  /* Partners carousel on mobile */
+  .carousel-logo-item {
+    min-width: 120px;
+    height: 64px;
+    padding: var(--space-12);
+  }
+
+  .carousel-logo-item img {
+    max-height: 36px;
+    max-width: 100px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Small Smartphone (480px and below)
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.85rem;
+  }
+
+  .section-header .section-title {
+    font-size: 1.5rem;
+  }
+
+  .trust-bar-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .partners-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .partner-card {
+    height: 75px;
+  }
+
+  .lead-form-box {
+    padding: var(--space-20);
+  }
+
+  .proof-stats-row {
+    grid-template-columns: 1fr;
+  }
+
+  .header-actions .btn-outline {
+    display: none;
+  }
+}

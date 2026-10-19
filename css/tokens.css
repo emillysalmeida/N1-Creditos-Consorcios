@@ -1,0 +1,133 @@
+/* ==========================================================================
+   N1 CRÉDITO E CONSÓRCIOS — DESIGN SYSTEM TOKENS v2
+   Identidade Visual Oficial:
+   - Azul Marinho: #152943 (Confiança, solidez, segurança)
+   - Azul Vibrante: #106DCE (Inovação, crescimento, dinamismo)
+   - Verde Accent: #499C76 (Prosperidade, conquista, evolução)
+   - Tipografia: Montserrat (Fallback oficial da Gotham)
+   ========================================================================== */
+
+:root {
+  /* Brand Core Colors */
+  --brand-navy: #152943;
+  --brand-navy-light: #1e3a5f;
+  --brand-navy-dark: #0e1c2e;
+  --brand-blue: #106DCE;
+  --brand-blue-hover: #0d5bb0;
+  --brand-blue-light: #3d8be0;
+  --brand-blue-soft: #eaf4ff;
+  --brand-blue-ghost: #f1f7fd;
+  --brand-green: #499C76;
+  --brand-green-hover: #3d8564;
+  --brand-green-soft: #edf7f2;
+  --brand-green-ghost: #f4faf6;
+
+  /* Surfaces & Backgrounds */
+  --bg-main: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-surface-alt: #f1f5f9;
+  --bg-surface-elevated: #ffffff;
+  --bg-subtle: #f8fafc;
+  --bg-highlight: #f0f7ff;
+
+  /* Typography Colors */
+  --text-primary: #152943;
+  --text-secondary: #526071;
+  --text-muted: #7e8d9f;
+  --text-inverse: #ffffff;
+  --text-inverse-muted: #cbd5e1;
+  --text-accent: #106DCE;
+  --text-success: #2e7d56;
+
+  /* Borders & Dividers */
+  --border-light: #e8eef5;
+  --border-default: #d8e2ec;
+  --border-focus: #106DCE;
+  --border-green: #499C76;
+
+  /* Feedback Colors */
+  --color-danger: #d93838;
+  --color-danger-soft: #fdf2f2;
+  --color-warning: #e67e22;
+  --color-warning-soft: #fef6ed;
+  --color-warning-text: #7d3f0a;
+  --color-info: #106DCE;
+  --color-info-soft: #eaf4ff;
+  --color-success: #499C76;
+
+  /* Typography Scale */
+  --font-family-base: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-md: 1.125rem;   /* 18px */
+  --font-size-lg: 1.25rem;    /* 20px */
+  --font-size-xl: 1.5rem;     /* 24px */
+  --font-size-2xl: 1.875rem;  /* 30px */
+  --font-size-3xl: 2.25rem;   /* 36px */
+  --font-size-4xl: 2.75rem;   /* 44px */
+  --font-size-5xl: 3.5rem;    /* 56px */
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  --line-height-tight: 1.2;
+  --line-height-snug: 1.35;
+  --line-height-base: 1.6;
+  --line-height-loose: 1.8;
+
+  /* Spacing Scale (Base 8px) */
+  --space-2: 0.125rem;
+  --space-4: 0.25rem;
+  --space-8: 0.5rem;
+  --space-12: 0.75rem;
+  --space-16: 1rem;
+  --space-20: 1.25rem;
+  --space-24: 1.5rem;
+  --space-28: 1.75rem;
+  --space-32: 2rem;
+  --space-40: 2.5rem;
+  --space-48: 3rem;
+  --space-64: 4rem;
+  --space-80: 5rem;
+  --space-96: 6rem;
+
+  /* Border Radius */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 26px;
+  --radius-pill: 9999px;
+
+  /* Shadows */
+  --shadow-subtle: 0 1px 3px rgba(21, 41, 67, 0.04), 0 1px 2px rgba(21, 41, 67, 0.02);
+  --shadow-sm: 0 2px 6px rgba(21, 41, 67, 0.06);
+  --shadow-md: 0 8px 24px rgba(21, 41, 67, 0.08);
+  --shadow-lg: 0 16px 36px rgba(21, 41, 67, 0.10);
+  --shadow-xl: 0 24px 52px rgba(21, 41, 67, 0.14);
+  --shadow-card-hover: 0 14px 34px -4px rgba(16, 109, 206, 0.14), 0 4px 12px rgba(21, 41, 67, 0.06);
+
+  /* Transitions */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: 150ms var(--ease-in-out);
+  --transition-base: 250ms var(--ease-out);
+  --transition-slow: 400ms var(--ease-out);
+
+  /* Layout */
+  --container-max: 1220px;
+  --container-narrow: 940px;
+  --header-height: 80px;
+
+  /* Z-Index Hierarchy */
+  --z-base: 1;
+  --z-sticky: 100;
+  --z-header: 500;
+  --z-floating: 800;
+  --z-modal: 1000;
+  --z-toast: 1100;
+}
